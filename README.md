@@ -1,5 +1,5 @@
-About libnccl-ep-feedstock
-==========================
+About nccl-extensions-feedstock
+===============================
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nccl-extensions-feedstock/blob/main/LICENSE.txt)
 
@@ -36,10 +36,10 @@ Current release info
 | [![Conda Recipe](https://img.shields.io/badge/recipe-libnccl--m2n--static-green.svg)](https://anaconda.org/conda-forge/libnccl-m2n-static) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libnccl-m2n-static.svg)](https://anaconda.org/conda-forge/libnccl-m2n-static) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libnccl-m2n-static.svg)](https://anaconda.org/conda-forge/libnccl-m2n-static) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libnccl-m2n-static.svg)](https://anaconda.org/conda-forge/libnccl-m2n-static) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-nccl--extensions-green.svg)](https://anaconda.org/conda-forge/nccl-extensions) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/nccl-extensions.svg)](https://anaconda.org/conda-forge/nccl-extensions) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/nccl-extensions.svg)](https://anaconda.org/conda-forge/nccl-extensions) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/nccl-extensions.svg)](https://anaconda.org/conda-forge/nccl-extensions) |
 
-Installing libnccl-ep
-=====================
+Installing nccl-extensions
+==========================
 
-Installing `libnccl-ep` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `nccl-extensions` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
 conda config --add channels conda-forge
@@ -168,17 +168,17 @@ Terminology
                   produce the finished article (built conda distributions)
 
 
-Updating libnccl-ep-feedstock
-=============================
+Updating nccl-extensions-feedstock
+==================================
 
-If you would like to improve the libnccl-ep recipe or build a new
+If you would like to improve the nccl-extensions recipe or build a new
 package version, please fork this repository and submit a PR. Upon submission,
 your changes will be run on the appropriate platforms to give the reviewer an
 opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/libnccl-ep-feedstock are
+Note that all branches in the conda-forge/nccl-extensions-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks, and branches in the main repository should only be used to
 build distinct package versions.

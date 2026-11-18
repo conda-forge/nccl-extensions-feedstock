@@ -234,6 +234,7 @@ about:
     - nccl_ep/LICENSE.txt
 
 extra:
+  feedstock-name: nccl-extensions
   recipe-maintainers:
     - shermansiu
     - conda-forge/cuda
