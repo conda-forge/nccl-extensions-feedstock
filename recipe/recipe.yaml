@@ -205,7 +205,6 @@ outputs:
         - nccl4py
         - numpy
         - packaging
-        - typing_extensions
       ignore_run_exports:
         from_package:
           - cuda-cudart-dev
