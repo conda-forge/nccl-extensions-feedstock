@@ -79,8 +79,6 @@ outputs:
     requirements:
       run:
         - ${{ pin_subpackage('libnccl-ep', exact=True) }}
-        - nccl
-        - cuda-cudart-dev
       run_exports:
         - ${{ pin_subpackage('libnccl-ep', upper_bound='x.x') }}
     tests:
@@ -135,7 +133,6 @@ outputs:
     requirements:
       run:
         - ${{ pin_subpackage('libnccl-m2n', exact=True) }}
-        - nccl
         - cuda-cudart-dev
         - cuda-driver-dev
       run_exports:
