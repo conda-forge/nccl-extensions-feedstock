@@ -31,9 +31,15 @@ make -C nccl_ep build BUILDDIR="${PREFIX}"
 export LDFLAGS="${host_ldflags}"
 
 # CMake provides M2N's shared/static libraries and exported CMake targets.
+# Compiler activation supplies tool names; resolve them before passing them as
+# CMake FILEPATH values so they are not made relative to the source directory.
+cmake_ar="$(command -v "${AR}")"
+cmake_ranlib="$(command -v "${RANLIB}")"
 # CMAKE_ARGS is a list of arguments supplied by compiler activation.
 # shellcheck disable=SC2086
 cmake -S nccl_m2n -B build-m2n -G Ninja ${CMAKE_ARGS} \
+    -DCMAKE_AR="${cmake_ar}" \
+    -DCMAKE_RANLIB="${cmake_ranlib}" \
     -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DCMAKE_CUDA_RUNTIME_LIBRARY=Shared \
